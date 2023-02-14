@@ -1,0 +1,36 @@
+
+.task{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    position: relative;
+}
+.urgent{
+    background: #ce6565;
+}
+.not_urgent{
+    background: #8bbe8e;
+}
+.task button{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    display: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ff0101;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.task:hover.task button{
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .task>button{
+        display: block;
+    }
+}

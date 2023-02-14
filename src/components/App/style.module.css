@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: sans-serif; 
+    list-style: none;
+}
+html ,body {
+    background: rgb(46, 46, 46);
+}
+.wrapper{
+    max-width: 940px;
+    min-width: 400px;
+    margin: 0 auto;
+    height: 100vh;
+    padding: 20px;
+}

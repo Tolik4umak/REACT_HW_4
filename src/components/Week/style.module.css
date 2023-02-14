@@ -1,0 +1,51 @@
+.week{
+    margin-top: 50px;
+    display: grid;
+    grid-gap: 20px;
+}
+.day {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    position: relative;
+}
+.day h2{
+    color: #fff;
+    padding: 10px;
+    background:  rgb(66, 95, 114);
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    align-items: center;
+}
+.day>div{
+    background: #fff;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+    border-radius:  0 10px 10px 0;
+    padding-right: 35px;
+}
+
+.day>button{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    font-size: larger;
+    display: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ff0101;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.day:hover.day>button{
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .day>button{
+        display: block;
+    }
+}
